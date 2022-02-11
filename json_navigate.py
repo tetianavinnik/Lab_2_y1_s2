@@ -39,7 +39,7 @@ def navigate(file):
             
         if isinstance(data, list):
             if data != [] and len(data) != 1:
-                inp = int(input('Enter index(0-' + str(len(data)) + '): '))
+                inp = int(input('Enter index(0-' + str(len(data)-1) + '): '))
                 if isinstance(data[inp], dict):
                     print('This is a dictionary')
                     recursion(data[inp])
